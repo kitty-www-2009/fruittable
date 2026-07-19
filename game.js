@@ -362,6 +362,7 @@ function NextTask() {
     for (var i=0; i<fruits.length; ++i) {
         fruits[i].setX(randomInt(FruitSize/2, SceneWidth-FruitSize/2))
         fruits[i].setY(-FruitSize/2 - i*FruitSize)
+        fruits[i].setRotation(0)
         fruits[i].setActive(true)
         fruits[i].setVisible(true)
         fruits[i].body.setVelocity(0, getVelocity())
