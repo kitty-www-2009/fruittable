@@ -123,7 +123,7 @@ scene.end = function() {
 
 // случайное число в диапазон [min, max]
 function randomInt(min, max) {
-	return min + Math.floor((max - min + 1) * Math.random())
+    return min + Math.floor((max - min + 1) * Math.random())
 }
 
 function getVelocity() {
@@ -317,7 +317,7 @@ function CreateTask() {
             }
         }
     }
-    var random = Math.floor(Math.random() * (totalSum + 1))
+    var random = randomInt(0, totalSum)
     var sum = 0
     for (let row = 0; row < 7; row++) {
         for (let col = 0; col < 7; col++) {
